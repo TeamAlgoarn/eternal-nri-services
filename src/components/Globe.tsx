@@ -227,7 +227,6 @@ export function Globe() {
       <div className="ens-global-orbit ens-global-orbit-a" aria-hidden="true" />
       <div className="ens-global-orbit ens-global-orbit-b" aria-hidden="true" />
       <canvas ref={canvasRef} className="ens-global-canvas" aria-hidden="true" />
-      <div className="ens-global-origin" aria-hidden="true"><span className="ens-global-pin" /> ETERNAL NRI SERVICES <small>BENGALURU, INDIA</small></div>
       <button
         type="button"
         className="ens-global-toggle"
@@ -240,9 +239,6 @@ export function Globe() {
         .ens-global-orbit{position:absolute;inset:10%;border:1px solid rgba(210,173,112,.24);border-radius:50%;transform:rotate(-28deg) scaleY(.52);pointer-events:none}
         .ens-global-orbit-a{animation:ens-spin 52s linear infinite}
         .ens-global-orbit-b{transform:rotate(52deg) scaleY(.64);animation:ens-spin-back 65s linear infinite}
-        .ens-global-origin{position:absolute;z-index:3;bottom:2%;left:50%;transform:translateX(-50%);color:#fff;white-space:nowrap;text-align:center;font-size:10px;letter-spacing:.12em;font-weight:700;padding:9px 13px;background:rgba(8,24,40,.82);border:1px solid rgba(209,174,113,.35);backdrop-filter:blur(9px);border-radius:8px}
-        .ens-global-origin small{display:block;margin-top:4px;color:#dec08a;font-size:9px;letter-spacing:.15em}
-        .ens-global-pin{display:inline-block;width:6px;height:6px;margin-right:5px;border-radius:50%;background:#e9c58c;box-shadow:0 0 8px #e9c58c}
         .ens-global-toggle{position:absolute;z-index:4;right:1%;top:3%;color:#e8d4ac;background:rgba(8,24,40,.7);border:1px solid rgba(214,181,120,.3);border-radius:99px;font-size:11px;padding:7px 12px;cursor:pointer}
         .ens-global-toggle:hover{background:rgba(35,58,76,.9)}
         @keyframes ens-spin{to{transform:rotate(332deg) scaleY(.52)}}
